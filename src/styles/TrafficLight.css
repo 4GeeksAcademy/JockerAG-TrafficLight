@@ -1,0 +1,72 @@
+main{
+    border: 2px solid red;
+    height: 100vh;
+}
+
+
+.traffic-light{
+    margin: 0 auto;
+    height: 400px;
+    width: 200px;
+    background-color: black;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+    
+.btn {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}   
+    
+    
+
+.traffic-light div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.luz-roja{
+   
+    background-color: red;
+    
+}
+    
+.luz-amarilla{
+    
+    background-color: yellow;
+    
+}
+ 
+.luz-verde{
+    
+    background-color: green;
+    
+    
+}
+
+.glow-rojo {
+    box-shadow: 0px 0px 9px 4px red;
+    animation: glow 0.8s linear infinite alternate;
+}
+
+.glow-amarillo {
+    box-shadow: 0px 0px 9px 4px yellow;
+    animation: glow 0.8s linear infinite alternate;
+}
+
+.glow-verde {
+    box-shadow: 0px 0px 9px 4px green;
+    animation: glow 0.8s linear infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        box-shadow: 0px 0px 30px 20px yellowgreen;
+    }
+}
